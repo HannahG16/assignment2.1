@@ -360,14 +360,14 @@ add appropriate spacing, the width is set to 100% of the page */
 
 /* styles the icon class by aligning text into the center, setting the font size to 25px and adding 1 rem of padding 
 on the top */
-.icons {
+.iconscv {
     text-align: center;
     font-size: 25px;
     padding-top: 1rem;
 }
 
 /* when the icons are hovered over they will turn a pink colour */
-.icons i:hover {
+.iconscv i:hover {
     color: rgba(247, 8, 175, 0.849);
 }
 
@@ -461,4 +461,87 @@ the font size to 14px, the same as all the other paragraph text. */
     font-family: 'Oswald',cursive;
     font-size: 14px;
 
+}
+
+/* contact.html */
+
+/* aligns all the containing objects centeral */
+.wrapper {
+    text-align: center;
+}
+
+/* styles the class container by adding padding to the bottom of 3rem, setting the maximum width to 
+400px displaying the display as inline block and setting a mergin of 50px top and bottom and 0 on the sides, the 
+background colour is set to below */
+.contactContainer {
+    padding-bottom: 3rem;
+    max-width: 400px;
+    display: inline-block;
+    margin: 50px 0;
+    background-color: rgba(233, 217, 228, 0.849);
+}
+
+/* styles the h3 tag in the form in the container class by setting the font family to squada one, the font size to 40px
+and the fron weight to normal */
+.contactContainer form h3 {
+    font-family: 'Squada one', cursive;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+/* when the h3 item in the form is hovered over it will change to the colour pink */
+.contactContainer form h3:hover {
+    color: rgba(247, 8, 175, 0.849);
+}
+
+/* styles the h4 tag inside the form inside the container by adding the font family oswald and the font weight
+to normal */
+.contactContainer form h4 {
+    font-family: 'Oswald', cursive;
+    font-weight: normal;
+}
+
+/* styles the fieldset tag which is the fields within the form by adding a medium border, margin to the bottom of 10px
+and setting the minimum width to 70% so when the page is resized it doesnt become thinner and thinner. Setting the width
+to 70% means the field width wont change even if resized. margin is set to auto and padding is set on the left to 
+10px */
+ fieldset {
+	border: medium none;
+	margin-bottom: 10px;
+	min-width: 70%;
+	padding-left: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+/* styles the inputs within the form to inherit the width from its parent, setting a border 1px thick which is solid and 
+the colour, setting the background colour and adding padding around the edge as well as displaying the display
+as inline block and setting the font family to oswald. */
+.input input[type='text'], .input input[type='email'], .input input[type='tel'], .input textarea{
+	width: inherit;
+	border:1px solid #CCC;
+	background:rgb(243, 243, 235);
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: 'Oswald', cursive;
+}
+
+/* the button is styled by adding a background colour, removing the boreder automatically put onto the element,
+aligning it centerally and setting the font family to squada one and the font size to 21px. the cursor allows you 
+to change the style of the cursor, i changed this to pointer so people are aware that it can be pressed */
+button {
+    background-color: rgba(233, 217, 228, 0.849);
+    border: none;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* when the button is hovered over the background colour is changed and the text colour to white, the 
+transition speed is set to 0.3s */
+button:hover {
+    background-color: rgba(189, 187, 192, 0.438);
+    color: white;
+    transition: 0.3s;
 }

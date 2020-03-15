@@ -40,8 +40,56 @@
     </div>
     
     <div class="right-container" id="scroll">
-        
-        
+        <!-- https://codepen.io/ssbalakumar/pen/uzDIA*/ codepen -->
+     <!-- wrapper div to enable styling on everything -->
+     <div class="wrapper">
+        <!-- container div which will be used to style the contact form -->
+         <div class="contactContainer">  
+           <!-- creates a form with the class contact and a method of posting the information -->
+           <form class="contact" action="" method="post">
+             <!-- title of the form  -->
+             <h3>CONTACT ME</h3>
+             <!-- gives the user information about what the form can be used for -->
+             <h4>Want to find out more about me or interested in my work? Contact me using the form below;</h4>
+             
+             <!-- creates a fieldset assigned to the class input, this will show the place holder text full name,
+             holds text and the tab index allows the user to move down the boxes using the keyboard keys in the
+             stated order, this is 1. Required means that the form cant be inputted without it holding data.
+             The auto focus will put the cursor in this input automatically -->
+             <fieldset class="input">
+               <input placeholder="Full name" type="text" tabindex="1" required autofocus>
+             </fieldset>
+             
+             <!-- creates a fieldset assigned to the class input, this will show the place holder text email address,
+             holds emails and the tab index allows the user to move down the boxes using the keyboard keys in the
+             stated order, this is 2. Required means that the form cant be inputted without it holding data -->
+             <fieldset class="input">
+               <input placeholder="Email Address" type="email" tabindex="2" required>
+             </fieldset>
+             
+             <!-- creates a fieldset assigned to the class input, this will show the place holder text phone number,
+             holds tels and the tab index allows the user to move down the boxes using the keyboard keys in the
+             stated order, this is 3. Required means that the form cant be inputted without it holding data -->
+             <fieldset class="input">
+               <input placeholder="Phone Number" type="tel" tabindex="3" required>
+             </fieldset>
+             
+             <!-- creates a fieldset assigned to the class input, this will show the place holder text Type your message here,
+             the tab index allows the user to move down the boxes using the keyboard keys in the stated order, this is 4. The text area 
+             allows the user to enter a longer message into the area. Required means that the form cant be inputted without it holding data -->
+             <fieldset class="input">
+               <textarea placeholder="Type your Message Here...." tabindex="4" required></textarea>
+             </fieldset>
+           
+             <!-- creates a fieldset with a button inside, the buttons name is submit and will submit the form when clicked
+             aslong as all the information is inputted -->
+             <fieldset>
+               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+             </fieldset>
+           </form>
+         
+         </div>
+       </div>
 
     </div>
     
