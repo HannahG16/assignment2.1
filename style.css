@@ -271,3 +271,194 @@ this will be done at a transition speed of 0.3 seconds */
 .link a:hover {
     color: rgba(247, 8, 175, 0.849);
 }
+
+/* cv.html */
+
+/* styles the h1 tag inside the title class by setting the font family to squada one, the font weigth to normal
+and the font size to 40px. The text is aligned in the center and a margin of 1rem is added to the bottom */
+.title h1 {
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* when the h1 in the title class is hovered over the colour changes to pink with an alpha value */
+.title h1:hover {
+    color: rgba(247, 8, 175, 0.849);
+}
+
+/* the class holds the grid display and sets the column to repeat 2 with 1fr, the grid gap is 0 to keep the
+contents next to each other, the grid rows are 100px minmax and are automatically implimented. Padding is added 
+on the top and bottom. The max width is set to 40% and the margin is set to auto  */
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    max-width: 50%;
+    margin: auto;
+}
+
+/* styles the h3 tag inside the class by setting the margin start to 2px and margin end aswell*/
+.containerGrid h3 {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+/* styles the paragraph tag inside the class by setting the margin start to 2px and margin end 15px */
+.containerGrid p {
+    margin-block-start: 2px;
+    margin-block-end: 15px;
+}
+
+/* styles the section1 class by setting the position within the grid to column 1 and row 1 to 5, the background
+colour to rgba below and adding padding to the right, left and bottom to create appropriate spacing */
+.section1 {
+    grid-column: 1 ;
+    grid-row: 1/5;
+    background-color: rgba(166, 164, 168, 0.438);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 20px;
+}
+
+/* styles the h3 tag inside the class by setting the font family to squada one, the paragraph font, the font weight to normal
+the font size to 30px and aligning the text to the center. Padding is also added to the bottom of 10px */
+.section1 h3 {
+    font-family: 'Squada One',cursive;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* styles the class image cv by aligning the text in the center, adding padding to the bottom and top of 1 rem to
+add appropriate spacing, the width is set to 100% of the page */
+.imageCV {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+/* styles the paragraph text in class by setting the font family to oswald and setting the font size to 14px */
+.contactDetails p {
+    font-family: 'Oswald',cursive;
+    font-size: 14px;
+}
+
+/* styles the contact section  */
+.contact {
+    text-align: center;
+    font-family: 'Oswald', cursive;
+    font-size: 14px;
+}
+
+/* styles the icon class by aligning text into the center, setting the font size to 25px and adding 1 rem of padding 
+on the top */
+.icons {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 1rem;
+}
+
+/* when the icons are hovered over they will turn a pink colour */
+.icons i:hover {
+    color: rgba(247, 8, 175, 0.849);
+}
+
+/* styles the section2 class by positioning it within the grid by assigning it to grid column 2 and grid row 1/5,
+the background colour is then set to the same colour used within the navigation, the font family is set to the header font
+squada one. Padding is then added for 1 rem to the right and the left and 20px to the bottom of the class */
+.section2 {
+    grid-column: 2 ;
+    grid-row: 1/5;
+    background-color: rgba(189, 187, 192, 0.438);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 20px;
+    font-family: 'Squada One', cursive;
+}
+
+/* styles the h1 text within the section 2 class by setting the font weight to normal, setting the font size to 40px
+sets the text to align in the center and a 10px margin along the bottom.  */
+.section2 h1 {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* sets the h3 font weight to normal to combat the fuzzy looking font when its not set to normal */
+.section2 h3 {
+    font-weight: normal;
+}
+
+/* sets the paragraph text in the section 2 class to the font familt oswald and the font size to 14px */
+.section2 p {
+    font-family: 'Oswald', cursive;
+    font-size: 14px;
+}
+
+/* styles the h3 tag inside the class by setting the font family to squada one setting the font weight to normal and the font 
+size to 30px, padding is set to 0. */
+.cvParts h3 {
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    padding: 0;
+}
+
+/* styles the paragraph tag by setting the font family to oswald */
+.cvParts p {
+    font-family: 'Oswald', cursive;
+}
+
+/* styles the list items in the unordered list in the class by setting the font family to oswald the paragraph font
+for the document, setting the weight to normal and the font size to 14px */
+.cvParts ul li {
+    font-family: 'Oswald', cursive;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* styles the unordered list in the class by adding padding inline start of 20px to set the start of the padding 
+20px in rather than the orginal position */
+.cvParts ul {
+    padding-inline-start: 20px;
+}
+
+/* styles the section 3 class by first setting up its grid position, this is done by setting the column to 1/3
+and the row to 5/6. The background colour is then set and the font family is Squada one the websites heading font
+from the google api. Padding is used to add spacing to the right, left and bottom. The line height has been set to
+20px to stop the large gap between each list item which effected the look of the information */
+.section3 {
+    grid-column: 1 / 3 ;
+    grid-row: 5 / 6 ;
+    background-color: rgba(189, 187, 192, 0.438);
+    font-family: 'Squada One', cursive;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 15px;
+    line-height: 20px;
+}
+
+/* styles the h3 element inside the section 3 by setting the font weight to normal, setting the font size to 30px
+and adding 1 rem of padding on the top of the class creating reasonal spacing */
+.section3 h3 {
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 1rem;
+}
+
+/* styles the unordered list in section 3 by setting the font family to oswald the google fonts api and sets
+the font size to 14px, the same as all the other paragraph text. */
+.section3 ul {
+    font-family: 'Oswald',cursive;
+    font-size: 14px;
+
+}
