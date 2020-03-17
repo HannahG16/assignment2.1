@@ -108,6 +108,12 @@ body{
 
 .backgroundImage img {
     width: 100vw;
+} 
+
+ .container {
+    background-image: url('images/laptop.png');
+    background-size: cover;
+    
 }
 
 .display {
@@ -223,6 +229,17 @@ deisgn effect, this has a 0.5 transition speed to make it gradual */
     transition: 0.5s;
 }
 
+canvas{
+    border:2px solid rgba(18, 18, 19, 0.438); 
+    font-family: 'Squada One';
+    
+  }
+
+.mainTextP canvas{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
 /* the links class is used to set up the grid for the three links, first the text is aligned centrally then the grid is set up. The grid
 has three template columns all are 100px with a 50px grid gap between them. The rows are set to auto row which will be 100p. padding is added 
 to all four of the sides to position them in the correct place, the bakcground colour is then set to make them stand out to the user and 
@@ -233,7 +250,7 @@ contrast from the background image */
     grid-template-columns: 100px 100px 100px;
     grid-gap: 50px;
     grid-auto-rows: minmax(100px, auto);
-    padding-left: 35%;
+    padding-left: 30%;
     padding-right: 20%;
     padding-top: 0px;
     padding-bottom: 40px;
@@ -242,9 +259,10 @@ contrast from the background image */
 
 /* sets the font family to oswald, the font size to 11px as its a smaller part of the text and sets the background colour to below */
 .link {
-    font-family: 'Oswald', cursive;
+    font-family: 'Squada One', cursive;
     font-size: 11px;
     background-color: rgba(189, 187, 192, 0.438);
+    margin-top: 20px;
 }
 
 /* styles the a element inside the link class by removing decoration on the text which is put on as its a link and setting the colour

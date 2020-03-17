@@ -41,10 +41,10 @@
     
     <div class="right-container" id="scroll">
         <div class="container">
-
+            
             <!-- creates an empty div which will have the background image styled within the css  -->
             <div class="backgroundImage"></div>
-    
+           
             <!-- div used to create the grid for the information within the display -->
             <div class="display">
                
@@ -70,7 +70,11 @@
                 </div>
         
                 <!-- creates mainTextP span to hold an image of my skills which can be positioned within the grid --> 
-                <span class="mainTextP"> <img src="images/skills.PNG" alt="skill representation"></span>
+                <span class="mainTextP"> 
+                    <canvas id="progress1" width='100' height='100'></canvas>
+                    <canvas id="progress2" width='100' height='100'></canvas>
+                    <canvas id="progress3" width='100' height='100'></canvas>
+                </span>
                 
                 <!-- creates a mainText3 div which will be positioned by the grid, it holds the title put before the links -->
                 <div class="mainText3">
@@ -78,7 +82,7 @@
                 </div>
                 
             </div>
-           
+        
             <!-- creates a navigation element for the links to find out more about me and assigns it to the class links -->
             <nav class="links">
                 <!-- creates a div with a link class, this holds the text git hub when clicked on takes the user to github -->
