@@ -73,6 +73,7 @@ body{
     color: rgba(247, 8, 175, 0.849);
 }
 
+
  
 .right-container{
     overflow-y: scroll;
@@ -260,7 +261,8 @@ contrast from the background image */
 /* sets the font family to oswald, the font size to 11px as its a smaller part of the text and sets the background colour to below */
 .link {
     font-family: 'Squada One', cursive;
-    font-size: 11px;
+    font-size: 15px;
+    font-weight: lighter;
     background-color: rgba(189, 187, 192, 0.438);
     margin-top: 20px;
 }
@@ -288,6 +290,114 @@ this will be done at a transition speed of 0.3 seconds */
 /* when the link a elements are hovered over the colour will change to pink  */
 .link a:hover {
     color: rgba(247, 8, 175, 0.849);
+}
+
+/* portfolio.html */
+
+.portfolio {
+    text-align: center;
+    
+}
+
+.portfolio h2 {
+    font-size: 35px;
+}
+
+.portfolio h2,.portfolio h3 {
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 4rem;
+}
+
+.buttons {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(300px);
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.portfolio-itemHTML {
+    background-color: rgba(243, 179, 224, 0.849);
+    height: 120px;
+}
+
+.portfolio-itemCSS {
+    background-color: rgba(189, 179, 243, 0.849);
+    height: 120px;
+}
+
+.portfolio-itemJS {
+    background-color: rgba(243, 208, 179, 0.849);
+    height: 120px;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.imageDiv {
+    position: absolute; 
+    top: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-image: url("images/laptop.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.imageDiv2 {
+    position: absolute; 
+    top: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-image: url("images/JS.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.imageDiv3 {
+    position: absolute; 
+    top: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-image: url("images/CSS.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.middle {
+    font-family: 'Squada One',cursive;
+    opacity: 0;
+    color: white;
+    transition: .5s ease;
+    position: absolute;
+    padding-left: 15px;
+    
+}
+
+.portfolio-item a:hover .middle{
+    font-size: 16px;
+    transition: 0.5s;
+    opacity: 1;
+    color: white;
+}
+
+.portfolio-item a {
+    text-decoration: none;
 }
 
 /* cv.html */
@@ -503,7 +613,7 @@ background colour is set to below */
 and the fron weight to normal */
 .contactContainer form h3 {
     font-family: 'Squada one', cursive;
-    font-size: 40px;
+    font-size: 41px;
     font-weight: normal;
 }
 

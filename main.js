@@ -7,6 +7,10 @@ let circle1 = document.getElementById('progress1').getContext('2d'),
 draw(circle1,'#f707af',75,'HTML');  
 draw(circle2,'#f707af', 60,'CSS'); 
 draw(circle3,'#f707af', 5,'JavaScript');
+
+circle1.font = "Oswald";
+circle2.font = "Oswald";
+circle3.font = "Oswald";
     
 function draw(circle,color,prec,text){
     let    al  = 0;
@@ -34,4 +38,17 @@ function draw(circle,color,prec,text){
       al++;
     }
 let sim = setInterval(progressSim, 50);
-} 
+}
+
+function filter(filter) {
+    let filter_class = filter.dataset.filter;
+    let all_portfolio_items = document.getElementById("portfolio-grid").getElementsByClassName("portfolio-item");
+
+    for (let i = 0; i<all_portfolio_items.length; i++) {
+      if (!all_portfolio_items[i].classList.contains(filter_class)) {
+        all_portfolio_items[i].style.display = "none";
+      } else {
+        all_portfolio_items[i].style.display = "block";
+      }
+    }
+}
