@@ -282,6 +282,16 @@ this will be done at a transition speed of 0.3 seconds */
     color: rgba(247, 8, 175, 0.849);
 }
 
+.quote {
+    font-family: 'Oswald',cursive;
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(189, 187, 192, 0.438);
+    /* height: 30px; */
+}
+
 /* portfolio.html */
 
 .portfolio {
@@ -673,7 +683,7 @@ button:hover {
     height: 50px;
     font-family: 'Squada One';
     font-weight: normal;
-    
+
 }
 
 .sucessful h2 {

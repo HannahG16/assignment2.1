@@ -75,3 +75,21 @@ function confirmation (){
 
 
 }
+
+let quotes = [
+  'Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.',
+  'Whatever the mind of man can conceive and believe, it can achieve.',
+  'We become what we think about. –Earl Nightingale',
+  'Challenges are what make life interesting and overcoming them is what makes life meaningful. –Joshua J. Marine',
+  'Dreaming, after all, is a form of planning. –Gloria Steinem',
+  'I didn’t fail the test. I just found 100 ways to do it wrong. –Benjamin Franklin',
+  'Everything has beauty, but not everyone can see. –Confucius',
+  'If you\'re offered a seat on a rocket ship, don\'t ask what seat! Just get on. –Sheryl Sandberg'
+]
+
+function quote() {
+  let randommNumber = Math.floor(Math.random()*(quotes.length));
+  
+  // console.log(quotes[randommNumber]);
+document.getElementById('quote_entry').innerHTML = quotes[randommNumber];
+}
