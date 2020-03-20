@@ -66,7 +66,12 @@ function confirmation (){
   if (confirm("Are you sure your ready to send!?") == true) {
     sucessful = "Successfully Sent!";
   } else {
-    sucessful = "";
+    sucessful = "not send";
   }
   document.getElementById("sucessful").innerHTML = sucessful;
+
+
+
+
+  
 }
