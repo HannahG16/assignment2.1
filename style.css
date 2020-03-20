@@ -3,6 +3,10 @@ body{
     margin: 0;
 }
 
+footer {
+    visibility: hidden;
+}
+
 .left-container{
     width: 20%;
     height: 100vh;
@@ -712,6 +716,7 @@ button:hover {
         padding-right: 0;
         grid-template-columns: repeat(1, 1fr);
         padding-top: 20px;
+        padding-bottom: 20px;
         
     }
 
@@ -727,6 +732,62 @@ button:hover {
     .portfolio-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-container {
+        width: 100%;
+        height: 50px;
+        padding-top: 0;
+    }
+
+    .right-container{
+        width: 100%;
+    }
+
+    .profile-image {
+        display: none;
+    }
+
+    .navigation {
+        padding-top: 0;
+    }
+
+    .navigation ul li {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+
+    body{
+        overflow-y: visible;
+    }
+
+    footer {
+    visibility: visible;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(233, 217, 228, 0.849);
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    /* when the footer links are hovered over the colour will change to pink */
+    footer a:hover {
+        color: rgba(247, 8, 175, 0.849);
+    }
+
+    .right-container {
+        overflow-y: visible;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -753,7 +814,4 @@ button:hover {
     .containerGrid {
         max-width: 70%;
     }
-}
-
-
 }
