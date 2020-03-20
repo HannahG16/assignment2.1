@@ -52,3 +52,11 @@ function filter(filter) {
       }
     }
 }
+
+function hoverIconBig (x){
+    x.style.fontSize = "40px";
+}
+
+function hoverIconOut (x){
+  x.style.fontSize = "35px";
+}
