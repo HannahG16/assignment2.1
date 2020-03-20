@@ -60,3 +60,13 @@ function hoverIconBig (x){
 function hoverIconOut (x){
   x.style.fontSize = "35px";
 }
+
+function confirmation (){
+  let sucessful
+  if (confirm("Are you sure your ready to send!?") == true) {
+    sucessful = "Successfully Sent!";
+  } else {
+    sucessful = "";
+  }
+  document.getElementById("sucessful").innerHTML = sucessful;
+}

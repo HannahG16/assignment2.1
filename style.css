@@ -615,6 +615,10 @@ to normal */
     font-weight: normal;
 }
 
+.contactContainer .sucessful {
+    text-align: center;
+}
+
 /* styles the fieldset tag which is the fields within the form by adding a medium border, margin to the bottom of 10px
 and setting the minimum width to 70% so when the page is resized it doesnt become thinner and thinner. Setting the width
 to 70% means the field width wont change even if resized. margin is set to auto and padding is set on the left to 
@@ -658,4 +662,98 @@ button:hover {
     background-color: rgba(189, 187, 192, 0.438);
     color: white;
     transition: 0.3s;
+}
+
+.sucessful {
+    width: 100%;
+    height: 50px;
+    background-color: tomato;
+}
+
+.sucessful h2 {
+    font-family: 'Squada One',cursive;
+    font-weight: normal;
+}
+
+
+@media only screen and (max-width: 639px) {
+    /* changes the grid column to only 1 rather than 2 */
+    .display {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sets the column to 1 and the row to 2 */
+    .profilePicture {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    /* sets the column to 1 and the row to 3 */
+    .mainText2 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    /* sets the column to 1 and the row to 4 */
+    .mainTextP {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    /* sets the column to 1 and the row to 5  */
+    .mainText3 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    /* removes the padding from the left and right setting it to 0 and sets the grid 10 1 column */
+    .links{
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 20px;
+        
+    }
+
+    /* sets the column position to 1 and resets the width and height to 100px, margin auto centers the class 
+    by adding equal padding on ethier side */
+    .link {
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (max-width: 1023px) {
+    /* sets the width of the display grid to 70% and centers the content through using margin auto, change padding
+    on the left and the right to 0 to remove it */
+    .display {
+        max-width: 70%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* stlyes the image inside the maintextp class by setting the width to 100%*/
+    .mainTextP img {
+        width: 100%;
+    }
+
+    /* adds 25% padding to the left of the links class */
+    .links {
+        padding-left: 25%
+    }
+
+    /*sets the container grid class to a max width of 70%*/
+    .containerGrid {
+        max-width: 70%;
+    }
+}
+
+
 }
