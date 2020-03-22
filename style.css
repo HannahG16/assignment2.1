@@ -21,9 +21,17 @@ footer {
     padding-top: 2rem;
 }
 
-.profile-image img {
-    border-radius: 5%;
+.profile-image img:hover {
+    
+    border-radius: 0%;
+    transition: 3s;
 }
+
+.profile-image img {
+    border-radius: 10%;
+}
+
+
 
 .navigation {
     width: 100%;
