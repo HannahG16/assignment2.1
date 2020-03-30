@@ -57,6 +57,7 @@
         </div>
     </div>
     
+    <!-- div to create the right section of the page where all the information on that page will be stored -->
     <div class="right-container" id="scroll">
         <div class="container">
             
@@ -121,12 +122,17 @@
 
         </div>
 
+        <!-- creates a div to hold the random quote generator created within the main.js file -->
         <div class="quote">
+            <!-- creates a button which says click on me, and when clicked will go to the quote function -->
             <button type="button" onclick="quote()"> click me </button>
+            <!-- created h2 text which the random quote will be placed -->
             <h2 id="quote_entry"></h2>
         </div>
     </div>
     
+    <!-- creates a footer to hold all of the icons, this is styled to be hidden until the media query is used when the page goes 
+    below 639px in which it will be set to visible -->
     <footer>
         <!-- an icon for github through font awesome which when clicks takes the user to github -->
         <a href="https://github.com"><i class="fab fa-github-square"></i></a>
