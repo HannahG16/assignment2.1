@@ -311,6 +311,12 @@ this will be done at a transition speed of 0.3 seconds */
     font-size: 35px;
 }
 
+.portfolio h2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    color: rgba(247, 8, 175, 0.849);
+}
+
 .portfolio h2,.portfolio h3 {
     font-family: 'Squada One', cursive;
     font-weight: normal;
@@ -423,6 +429,8 @@ and the font size to 40px. The text is aligned in the center and a margin of 1re
 /* when the h1 in the title class is hovered over the colour changes to pink with an alpha value */
 .title h1:hover {
     color: rgba(247, 8, 175, 0.849);
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 /* the class holds the grid display and sets the column to repeat 2 with 1fr, the grid gap is 0 to keep the
@@ -628,7 +636,10 @@ and the fron weight to normal */
 /* when the h3 item in the form is hovered over it will change to the colour pink */
 .contactContainer form h3:hover {
     color: rgba(247, 8, 175, 0.849);
+    transform: scale(1.1);
+    transition: 1s;
 }
+
 
 /* styles the h4 tag inside the form inside the container by adding the font family oswald and the font weight
 to normal */

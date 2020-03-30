@@ -94,3 +94,4 @@ function quote() {
   // console.log(quotes[randommNumber]);
 document.getElementById('quote_entry').innerHTML = quotes[randommNumber];
 }
+
