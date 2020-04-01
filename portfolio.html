@@ -10,35 +10,51 @@
 </head>
 <body>
     
-    <div class="left-container" >
+    <!-- div to contain the left container of the screen creating the static navigation bar -->
+   <div class="left-container" id="nav1">
+       <!-- holds the profile picture of myself within the left-container -->
         <div class="profile-image">
+            <!-- image link to my profile picture, the alt tag will show as profile picture -->
             <img src="images/hannah.png" alt="profile picture">
         </div>
+        <!-- navigation section -->
         <nav class="navigation">
             <ul>
+                <!-- link to the index.html page -->
                 <li>
-                    <a href="index.html">ABOUT ME</a>
+                    <a href="index.html" >ABOUT ME</a>
                 </li>
+                <!-- link to the portfolio.html page -->
                 <li>
                     <a href="portfolio.html">PORTFOLIO</a>
                 </li>
+                <!-- link to the contact.html page -->
                 <li>
                     <a href="contact.html">CONTACT ME</a>
                 </li>
+                <!-- link to the cv.html page -->
                 <li>
                     <a href="cv.html">CV</a>
                 </li>
             </ul>
         </nav>
+
+        <!-- div to hold the social media content within the left-container -->
         <div class="icons">
+            <!-- an icon for github through font awesome which when clicks takes the user to git hub, when the mouse is hovered 
+            over it will send this to the main.js as when the mouse moves out from the icon -->
             <a href="https://github.com"><i class="fab fa-github-square" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
-            <!-- an icon for instagram through font awesome which when clicks takes the user to instagram -->
+            <!-- an icon for instagram through font awesome which when clicks takes the user to instagram, when the mouse is hovered 
+            over it will send this to the main.js as when the mouse moves out from the icon -->
             <a href="https://www.instagram.com/"><i class="fab fa-instagram" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
-            <!-- an icon for linked in through font awesome which when clicked takes the user to linkedin -->
+            <!-- an icon for linked in through font awesome which when clicked takes the user to linkedin, when the mouse is hovered 
+            over it will send this to the main.js as when the mouse moves out from the icon -->
             <a href="https://uk.linkedin.com/"><i class="fab fa-linkedin" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
         </div>
-    </div>
+   </div>
     
+   <!-- div to create the right section of the page where all the information on that page will be stored, the id scroll
+    allows a scroll bar to be placed on only this section rather than the whole page -->
     <div class="right-container" id="scroll">
         <div class="portfolio">
 
@@ -235,6 +251,8 @@
         </div>
     </div>
     
+    <!-- creates a footer to hold all of the icons, this is styled to be hidden until the media query is used when the page goes 
+    below 639px in which it will be set to visible -->
     <footer>
         <!-- an icon for github through font awesome which when clicks takes the user to github -->
         <a href="https://github.com"><i class="fab fa-github-square"></i></a>
@@ -244,6 +262,7 @@
         <a href="https://uk.linkedin.com/"><i class="fab fa-linkedin"></i></a>
     </footer>
     
+    <!-- links the main.js file -->
     <script src="main.js"></script>
 </body>
 </html>

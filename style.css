@@ -400,7 +400,6 @@ this will be done at a transition speed of 0.3 seconds */
     transition: .5s ease;
     position: absolute;
     padding-left: 15px;
-    
 }
 
 .portfolio-item a:hover .middle{

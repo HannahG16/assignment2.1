@@ -95,3 +95,16 @@ function quote() {
 document.getElementById('quote_entry').innerHTML = quotes[randommNumber];
 }
 
+ let navigation = new XMLHttpRequest();
+ navigation.open('GET', 'navigation.html', true);
+ navigation.onreadystatechange= function() {
+     document.getElementById('nav').innerHTML= this.responseText;
+ };
+ navigation.send();
+
+ let navigation1 = new XMLHttpRequest();
+ navigation1.open('GET', 'navigation.html', true);
+ navigation1.onreadystatechange= function() {
+     document.getElementById('nav1').innerHTML= this.responseText;
+ };
+ navigation1.send();
