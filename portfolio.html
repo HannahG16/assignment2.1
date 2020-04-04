@@ -65,7 +65,10 @@
             <h2>PORTFOLIO</h2>
             <h3>Take a look through some of my previous work:</h3>
             
+            <!-- creates a div for the buttons which control the portfolio grid allowing the user to choose which portfolio's they want to view -->
             <div class="buttons">
+                <!-- creates a button to view all portfolio items, the onclick sends this to the main.js function and the data-filter sends this specific bit of data to the function
+                which can then be stored in a variable -->
                 <button class="portfolio-filter" onclick="filter(this)" data-filter="portfolio-item">SHOW ALL</button>
                 <button class="portfolio-filter" onclick="filter(this)" data-filter="portfolio-itemHTML">HTML</button>
                 <button class="portfolio-filter" onclick="filter(this)" data-filter="portfolio-itemCSS">CSS</button>
@@ -247,10 +250,6 @@
 
                     </a>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
