@@ -1,5 +1,6 @@
 // (c) 2020 by asmaa (https://codepen.io/asmaa-mohammed/pen/vxzroy)
-/* This part of the JS file creates the circle progress bars which are shown on the index.html page which represent
+/* This part of the JS file creates the circle progress bars which are shown on the index.html page which represent a proportion of the skills
+i hold within that area. This is first done by recieving the canavas through its set id and putting each into seperate variables. The draw function draws  
 */ 
 let circle1 = document.getElementById('progress1').getContext('2d'),
     circle2 = document.getElementById('progress2').getContext('2d'),
@@ -118,10 +119,3 @@ function quote() {
      document.getElementById('nav').innerHTML= this.responseText;
  };
  navigation.send();
-
- let navigation1 = new XMLHttpRequest();
- navigation1.open('GET', 'navigation.html', true);
- navigation1.onreadystatechange= function() {
-     document.getElementById('nav1').innerHTML= this.responseText;
- };
- navigation1.send();

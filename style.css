@@ -1,8 +1,10 @@
+/* within the body tag the y overflow is turned off and the margin is set to 0 */
 body{
     overflow-y: hidden;
     margin: 0;
 }
 
+/* sets the footers visability to hidden  */
 footer {
     visibility: hidden;
 }
@@ -371,6 +373,12 @@ this will be done at a transition speed of 0.3 seconds */
     background-repeat: no-repeat;
 }
 
+#assignment1 {
+    overflow: hidden;
+    background-size: cover;
+    background-image: url("images/assignment1.PNG");
+}
+
 .imageDiv2 {
     position: absolute; 
     top: 0; 
@@ -380,6 +388,18 @@ this will be done at a transition speed of 0.3 seconds */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+}
+
+#todo {
+    overflow: hidden;
+    background-size: cover;
+    background-image: url("images/Capture.PNG");
+}
+
+#profilePage {
+    overflow: hidden;
+    background-size: cover;
+    background-image: url("images/profilePage.PNG");
 }
 
 .imageDiv3 {
