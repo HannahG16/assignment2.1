@@ -1,46 +1,53 @@
 // (c) 2020 by asmaa (https://codepen.io/asmaa-mohammed/pen/vxzroy)
 /* This part of the JS file creates the circle progress bars which are shown on the index.html page which represent a proportion of the skills
-i hold within that area. This is first done by recieving the canavas through its set id and putting each into seperate variables. The draw function draws  
+i hold within that area. To start an if statement was used to check that if all three id's were present on the specific page then complete the 
+following, this was because an error was shown as when on another page the file couldnt find any elements with matching id's preventing the code from completing 
+other parts of the JavaScript. if they are present then it creates three variables circle 1,2 and 3. These are set to equal the id on the index.html page 
+within the canavases. These are then styled through the draw function which enables the colour, amount of percentage and the text to be inserted by using the function
+created below. The font is then set for each circle to match the house style of the document.
+  
 */ 
-let circle1 = document.getElementById('progress1').getContext('2d'),
-    circle2 = document.getElementById('progress2').getContext('2d'),
-    circle3 = document.getElementById('progress3').getContext('2d');
-    
- 
-draw(circle1,'#f707af',75,'HTML');  
-draw(circle2,'#f707af', 60,'CSS'); 
-draw(circle3,'#f707af', 5,'JavaScript');
-
-circle1.font = "Oswald";
-circle2.font = "Oswald";
-circle3.font = "Oswald";
-    
-function draw(circle,color,prec,text){
-    let    al  = 0;
-    let    start = 4.72;
-    let    cw  = circle.canvas.width;
-    let    ch  = circle.canvas.height;
-    let    diff;
-    
-    function progressSim(){
-      diff = ((al / 100) * Math.PI*2*10).toFixed(2);
-      circle.clearRect(0, 0, cw, ch);
-      circle.lineWidth = 12;
-      circle.fillStyle = color;
-      circle.strokeStyle = color;
-      circle.textAlign = 'center';
+if (document.getElementById('progress1') && document.getElementById('progress2') && document.getElementById('progress3')){
+  let circle1 = document.getElementById('progress1').getContext('2d'),
+      circle2 = document.getElementById('progress2').getContext('2d'),
+      circle3 = document.getElementById('progress3').getContext('2d');
       
-      circle.fillText(al + '%', cw*.5, ch*.45+2, cw);
-        circle.fillText(text, cw*.5, ch*.55+2, cw);
-      circle.beginPath();
-      circle.arc(50, 50, 40, start, diff/10+start, false);
-      circle.stroke();
-      if(al >= prec){
-        clearTimeout(sim);
+  
+  draw(circle1,'#f707af',75,'HTML');  
+  draw(circle2,'#f707af', 60,'CSS'); 
+  draw(circle3,'#f707af', 5,'JavaScript');
+
+  circle1.font = "Oswald";
+  circle2.font = "Oswald";
+  circle3.font = "Oswald";
+      
+  function draw(circle,color,prec,text){
+      let    al  = 0;
+      let    start = 4.72;
+      let    cw  = circle.canvas.width;
+      let    ch  = circle.canvas.height;
+      let    diff;
+      
+      function progressSim(){
+        diff = ((al / 100) * Math.PI*2*10).toFixed(2);
+        circle.clearRect(0, 0, cw, ch);
+        circle.lineWidth = 12;
+        circle.fillStyle = color;
+        circle.strokeStyle = color;
+        circle.textAlign = 'center';
+        
+        circle.fillText(al + '%', cw*.5, ch*.45+2, cw);
+          circle.fillText(text, cw*.5, ch*.55+2, cw);
+        circle.beginPath();
+        circle.arc(50, 50, 40, start, diff/10+start, false);
+        circle.stroke();
+        if(al >= prec){
+          clearTimeout(sim);
+        }
+        al++;
       }
-      al++;
-    }
-let sim = setInterval(progressSim, 50);
+  let sim = setInterval(progressSim, 50);
+  }
 }
 
 /*this function allows the portfolio items to be filtered into sections depending on which button the user clicks, this is done by when the button is clicked the data specified is 
@@ -112,7 +119,11 @@ function quote() {
   document.getElementById('quote_entry').innerHTML = quotes[randommNumber];
 }
 
-
+/* in order to have the navigation displayed on every page without being created within the JS file i decided to have a seperate html document holding the navigation section,
+a xml Http Request is then used by assigning it to the navigation variable. A xml Http Request object interacts with the server allowing one part of a document to be updated without 
+a whole page having to be refreshed and stop what the user is doing. In this case the request is getting the navigation.html file and when the page is changed / loaded it will complete
+the following function. this function looks for any id within the html documents called nav and inserts the navigation.html text inside. This is then sent at the end meaning the navigation
+only needs to be in one file and not on every page */
  let navigation = new XMLHttpRequest();
  navigation.open('GET', 'navigation.html');
  navigation.onreadystatechange= function() {
@@ -121,16 +132,3 @@ function quote() {
  navigation.send();
 
 
-//  let navigation = new XMLHttpRequest();
-//  navigation.open('GET', 'navigation.html', true);
-//  navigation.onreadystatechange= function() {
-//   if (window.location.pathname === 'index.html'){
-//   document.getElementById('nav').innerHTML= this.responseText;
-//   }
-
-//   else if (window.location.href=="portfolio.html"){
-//      document.getElementById('nav1').innerHTML= this.responseText;
-//   }
-
-//  };
-//  navigation.send();
