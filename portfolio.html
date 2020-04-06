@@ -17,44 +17,44 @@
     <!-- div to contain the left container of the screen creating the static navigation bar -->
    <div class="left-container" id="nav1">
        <!-- holds the profile picture of myself within the left-container -->
-        <div class="profile-image">
-            <!-- image link to my profile picture, the alt tag will show as profile picture -->
-            <img src="images/hannah.png" alt="profile picture">
-        </div>
-        <!-- navigation section -->
-        <nav class="navigation">
-            <ul>
-                <!-- link to the index.html page -->
-                <li>
-                    <a href="index.html" >ABOUT ME</a>
-                </li>
-                <!-- link to the portfolio.html page -->
-                <li>
-                    <a href="portfolio.html">PORTFOLIO</a>
-                </li>
-                <!-- link to the contact.html page -->
-                <li>
-                    <a href="contact.html">CONTACT ME</a>
-                </li>
-                <!-- link to the cv.html page -->
-                <li>
-                    <a href="cv.html">CV</a>
-                </li>
-            </ul>
-        </nav>
+<div class="profile-image">
+    <!-- image link to my profile picture, the alt tag will show as profile picture -->
+    <img src="images/hannah.png" alt="profile picture">
+</div>
+<!-- navigation section -->
+<nav class="navigation">
+    <ul>
+        <!-- link to the index.html page -->
+        <li>
+            <a href="index.html" >ABOUT ME</a>
+        </li>
+        <!-- link to the portfolio.html page -->
+        <li>
+            <a href="portfolio.html" >PORTFOLIO</a>
+        </li>
+        <!-- link to the contact.html page -->
+        <li>
+            <a href="contact.html">CONTACT ME</a>
+        </li>
+        <!-- link to the cv.html page -->
+        <li>
+            <a href="cv.html">CV</a>
+        </li>
+    </ul>
+</nav>
 
-        <!-- div to hold the social media content within the left-container -->
-        <div class="icons">
-            <!-- an icon for github through font awesome which when clicks takes the user to git hub, when the mouse is hovered 
-            over it will send this to the main.js as when the mouse moves out from the icon -->
-            <a href="https://github.com"><i class="fab fa-github-square" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
-            <!-- an icon for instagram through font awesome which when clicks takes the user to instagram, when the mouse is hovered 
-            over it will send this to the main.js as when the mouse moves out from the icon -->
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
-            <!-- an icon for linked in through font awesome which when clicked takes the user to linkedin, when the mouse is hovered 
-            over it will send this to the main.js as when the mouse moves out from the icon -->
-            <a href="https://uk.linkedin.com/"><i class="fab fa-linkedin" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
-        </div>
+<!-- div to hold the social media content within the left-container -->
+<div class="icons">
+    <!-- an icon for github through font awesome which when clicks takes the user to git hub, when the mouse is hovered 
+    over it will send this to the main.js as when the mouse moves out from the icon -->
+    <a href="https://github.com"><i class="fab fa-github-square" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
+    <!-- an icon for instagram through font awesome which when clicks takes the user to instagram, when the mouse is hovered 
+    over it will send this to the main.js as when the mouse moves out from the icon -->
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
+    <!-- an icon for linked in through font awesome which when clicked takes the user to linkedin, when the mouse is hovered 
+    over it will send this to the main.js as when the mouse moves out from the icon -->
+    <a href="https://uk.linkedin.com/"><i class="fab fa-linkedin" onmouseover="hoverIconBig(this)" onmouseout="hoverIconOut(this)"></i></a>
+</div>
    </div>
     
    <!-- div to create the right section of the page where all the information on that page will be stored, the id scroll
@@ -74,11 +74,16 @@
                 <button class="portfolio-filter" onclick="filter(this)" data-filter="portfolio-itemCSS">CSS</button>
                 <button class="portfolio-filter" onclick="filter(this)" data-filter="portfolio-itemJS">JAVASCRIPT</button>
             </div>
+
+            <!-- creates the portoflio grid which is styled within the style.css as grid layout under the class given -->
             <div class="portfolio-grid" id="portfolio-grid">
+                <!-- creates a div with a class of portfolio item and portfolio item html which is used within the JS file to filter the projects -->
                 <div class="portfolio-item portfolio-itemHTML">
+                    <!-- the a tag links the div to the assignment 1 portfolio site when its clicked on, the target opens it into a blank seperate tab in the browser-->
                     <a href="https://hannahg16.github.io/assignment1" target="_blank">
-                        <div class="imageDiv" id="assignment1" title="HTML project image">
-                        </div>
+                        <!--  -->
+                        <div class="imageDiv" id="assignment1" title="HTML project image"></div>
+                        <!-- holds the text which describes the project title -->
                         <div class="middle">
                             <div class="text">Assignment 1 </div>
                         </div>

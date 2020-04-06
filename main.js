@@ -114,8 +114,23 @@ function quote() {
 
 
  let navigation = new XMLHttpRequest();
- navigation.open('GET', 'navigation.html', true);
+ navigation.open('GET', 'navigation.html');
  navigation.onreadystatechange= function() {
-     document.getElementById('nav').innerHTML= this.responseText;
+ document.getElementById('nav').innerHTML= this.responseText;
  };
  navigation.send();
+
+
+//  let navigation = new XMLHttpRequest();
+//  navigation.open('GET', 'navigation.html', true);
+//  navigation.onreadystatechange= function() {
+//   if (window.location.pathname === 'index.html'){
+//   document.getElementById('nav').innerHTML= this.responseText;
+//   }
+
+//   else if (window.location.href=="portfolio.html"){
+//      document.getElementById('nav1').innerHTML= this.responseText;
+//   }
+
+//  };
+//  navigation.send();
