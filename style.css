@@ -1,4 +1,4 @@
-/* within the body tag the y overflow is turned off and the margin is set to 0 */
+/* within the body tag the y overflow is turned off so you cant scroll the whole body of the page down and the margin is set to 0 */
 body{
     overflow-y: hidden;
     margin: 0;
@@ -103,7 +103,9 @@ element */
     color: rgba(247, 8, 175, 0.849);
 }
 
- /*  */
+ /* the right container holds the seperate pages content, the overflow y is set to scroll allowing the user to only scroll that part of the page rather than the whole
+ body creating the effect as if the page has been split, the display is set to inline block and the background colour set. The height is set 100vh and the width is set 
+ to 79%, this was done because the left is set to 20% so a 1% space was needed to allow both elements to sit next to each other */
 .right-container{
     overflow-y: scroll;
     display: inline-block;
@@ -113,25 +115,25 @@ element */
 }
 
 /* index.html */
-
+/* the container class holds the contents of the index page, it has 20px of padding added to the top, the width set to the 100% of its parent element,
+the height set to auto and the x overflow hidden, the background image is set through the url and its set to cover the container class */
 .container {
     padding-top: 20px;
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    
+    background-image: url('images/laptop.png');
+    background-size: cover;
 }
 
-.backgroundImage img {
+/* the background image class is set to have a 100vw width */
+.backgroundImage {
     width: 100vw;
 } 
 
- .container {
-    background-image: url('images/laptop.png');
-    background-size: cover;
-    
-}
-
+/* the display class holds the information on the about me page creating the grid, the display is set to grid and the grid template column is set to repeat
+two times with one fr, the grid gap is set to 100px and rows are set to auto and 100px minmax. Padding is added to the right and left of 100px and to the 
+top of 20px to create appropriate spacing */
 .display {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -245,12 +247,13 @@ deisgn effect, this has a 0.5 transition speed to make it gradual */
     transition: 0.5s;
 }
 
+/* styles the canvas element to have a solid border and sets the font family to the google api font of squada one  */
 canvas{
     border:2px solid rgba(18, 18, 19, 0.438); 
     font-family: 'Squada One';
-    
-  }
+}
 
+/* styles the canvas element within the mainTextP span to have a margin on the top and on the left */
 .mainTextP canvas{
     margin-top: 40px;
     margin-left: 20px;
@@ -307,6 +310,8 @@ this will be done at a transition speed of 0.3 seconds */
     color: rgba(247, 8, 175, 0.849);
 }
 
+/* styles the quote class by setting the font family to oswald, the paragraph house style font, sets the font size to 10px, the font style to italic
+and making the text centrally alligned. The width was set to 100% and the background colour was set to the same as the navigation colour */
 .quote {
     font-family: 'Oswald',cursive;
     font-size: 10px;
@@ -314,7 +319,6 @@ this will be done at a transition speed of 0.3 seconds */
     text-align: center;
     width: 100%;
     background-color: rgba(189, 187, 192, 0.438);
-    /* height: 30px; */
 }
 
 /* portfolio.html */
