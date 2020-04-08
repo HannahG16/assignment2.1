@@ -8,5 +8,10 @@
 - LinkedIn https://www.linkedin.com/feed/?trk=guest_homepage-basic_sign-in-submit
 
 ### Github Sync Evidence
+This is my contribution grid from my github account;
+![contribution Grid](images/contributionGrid.png)
+
+This is evidence of me syncing my work to github consistantly from the begining of term;
+![contribution Grid](images/repos.png)
 
 ### Code Validation 
