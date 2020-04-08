@@ -787,6 +787,8 @@ squada one and the font weight set to normal */
 
 /* media queries */
 
+/* creates a media query for a mobile verison of the site at the break point 639px, so when the screen is under 
+this width it will change the layout to the stated below; */
 @media only screen and (max-width: 639px) {
     /* changes the grid column to only 1 rather than 2 */
     .display {
@@ -836,29 +838,36 @@ squada one and the font weight set to normal */
         margin: auto;
     }
 
+    /* changes the portfolio grid to 1 column  */
     .portfolio-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* changes the left container to 100% width of the page to put the navigation along the top of the page, the height is set
+    to 50px and the padding top is set to 0 */
     .left-container {
         width: 100%;
         height: 50px;
         padding-top: 0;
     }
 
+    /* sets the right container width to 100% */
     .right-container{
         width: 100%;
     }
 
+    /* removes the display of the profile image to none so only the navigation links are shown */
     .profile-image {
         display: none;
     }
 
+    /* sets the navigation padding top to 0 */
     .navigation {
         padding-top: 0;
     }
 
+    /* displays the li in the ul as inline block and adds a small amount of padding between the items. The font size is also set to 20px */
     .navigation ul li {
         display: inline-block;
         padding-left: 5px;
@@ -866,11 +875,15 @@ squada one and the font weight set to normal */
         font-size: 20px;
     }
 
-
+    /* sets the y overflow to visible for the body */
     body{
         overflow-y: visible;
     }
 
+    /* changes the footer to visible allowing the user to see the profile links at the bottom of the page, this is then styled to be
+    100% width and 30px high, the text is alligned centerally and the font family is set to squada one. the font size is set to 40px
+    and padding is added to create apropriate spacing. The background colour is set and the position is set using absolute positioning to the
+    left and bottom */
     footer {
     visibility: visible;
     width: 100%;
@@ -886,6 +899,7 @@ squada one and the font weight set to normal */
     bottom: 0;
     }
     
+    /* styles the footer a tag so the text is black and the text decoration to none */
     footer a {
         text-decoration: none;
         color: black;
@@ -899,6 +913,8 @@ squada one and the font weight set to normal */
     
 }
 
+/* creates a media query for a tablet version of the site at the breaking point 1023, so when the screen is under
+this width it will style the elements by changing the following; */
 @media only screen and (max-width: 1023px) {
     /* sets the width of the display grid to 70% and centers the content through using margin auto, change padding
     on the left and the right to 0 to remove it */
