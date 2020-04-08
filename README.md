@@ -12,6 +12,6 @@ This is my contribution grid from my github account;
 ![contribution Grid](images/contributionGrid.png)
 
 This is evidence of me syncing my work to github consistantly from the begining of term;
-![contribution Grid](images/repos.png)
+![contribution Grid](images/Repos.png)
 
 ### Code Validation 
