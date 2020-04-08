@@ -4,7 +4,8 @@ i hold within that area. To start an if statement was used to check that if all 
 following, this was because an error was shown as when on another page the file couldnt find any elements with matching id's preventing the code from completing 
 other parts of the JavaScript. if they are present then it creates three variables circle 1,2 and 3. These are set to equal the id on the index.html page 
 within the canavases. These are then styled through the draw function which enables the colour, amount of percentage and the text to be inserted by using the function
-created below. The font is then set for each circle to match the house style of the document.
+created below. The font is then set for each circle to match the house style of the document. The draw function takes in the circle, color,prec and text previously stated,
+variables are then created to hold values used to help create the shape of the circles.
   
 */ 
 if (document.getElementById('progress1') && document.getElementById('progress2') && document.getElementById('progress3')){
@@ -28,6 +29,12 @@ if (document.getElementById('progress1') && document.getElementById('progress2')
       let    ch  = circle.canvas.height;
       let    diff;
       
+      /* the progressSim function creates the movement of the function when the page is loaded. The diff creates the circle, the clear rect creates
+      the canvas which is used to hold the shape, the line width defines how thick the circle border is, the fill style is set to the colour stated above,
+      similar to the stroke style. The text alligns to the center. The fill text is set to the al value with the % text and is set between the canvas dimensions.
+      The begin path starts to draw the shape, the arc creates the circluar shape movement using the start position given and te diff value. 
+      if the al variable is greater than the prec percentage value then it will complete the clearTimeout function using the sim variable set below which sets the interval to 50.
+       */
       function progressSim(){
         diff = ((al / 100) * Math.PI*2*10).toFixed(2);
         circle.clearRect(0, 0, cw, ch);
