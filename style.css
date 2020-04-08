@@ -4,11 +4,14 @@ body{
     margin: 0;
 }
 
-/* sets the footers visability to hidden  */
+/* sets the footers visability to hidden so when the media query is hit it can be set to vivsible */
 footer {
     visibility: hidden;
 }
 
+/* the left container class holds the navigation side bar, this is given a 20% width and height of 100vh to fit the visible page,
+the display is set to inline block so each element falls below one another and the x overflow is hidden. The background colour is set
+and 0 padding is used to stop a white space put in by the browser */
 .left-container{
     width: 20%;
     height: 100vh;
@@ -18,23 +21,27 @@ footer {
     padding: 0;
 }
 
+/* the profile image class is alligned to the center and has appropriate padding added at the top to create good spacing */
 .profile-image {
     text-align: center;
     padding-top: 2rem;
 }
 
+/* when the image inside the profile-image class is hovered over the border radius will go to 0% at a transition of 2s */
 .profile-image img:hover {
     
     border-radius: 0%;
-    transition: 3s;
+    transition: 2s;
 }
 
+/* the image inside the .profile-image class is set to have a border radius of 10% */
 .profile-image img {
     border-radius: 10%;
 }
 
-
-
+/* the navigation class holds the navigation links, this is styled to be 100% width of its parent, the text to be alligned centerally to follow the consistant style
+within the left container, the font family set to squada one, the google fonts api as well as the font size set to 28px. Padding is added to the top and bottom
+of 50px each to create consistant spacing */
 .navigation {
     width: 100%;
     text-align: center;
@@ -45,6 +52,8 @@ footer {
     
 }
 
+/* the ul inside the navigation class is styled to have 0 margin auto and 0 padding both on the left and right. The list style is set to none
+to remove the automatic styling put on list elements */
 .navigation ul {
     margin: 0 auto;
     padding-left: 0;
@@ -52,43 +61,49 @@ footer {
     list-style: none;
 }
 
+/* the li within the ul within the navigation class is set to have padding of 10px on both the top and bottom creating spacing between each link 
+element */
 .navigation ul li {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
+/* when the list item is hovered over the background colour changes */
 .navigation ul li:hover {
     background-color: rgba(189, 187, 192, 0.438);
   }
 
+  /* the a tag inside the li, ul , navigation class is styled to be coloured black text with no text decoration */
 .navigation ul li a {
     color: #111 ;
     text-decoration: none;
-    
 }
 
+/* when the a tags are hovered over the text colour changes to white at a transition of 0.3 seconds */
 .navigation a:hover {
     color: white;
     transition: 0.3s;
  }
 
+ /* the icons class holds the profile icon links, the font size is set to 35px, the text is alligned centeral and padding of 60 pixels added to the top */
 .icons {
     font-size: 35px;
     text-align: center;
     padding-top: 60px;
 }
 
+/* the a tag inside the icons class is set to display no text decoration and set them to the text colour black */
 .icons a {
     text-decoration: none;
     color: black;
 }
 
+/* when the a tag is hovered over the text colour will change to pink */
 .icons a:hover {
     color: rgba(247, 8, 175, 0.849);
 }
 
-
- 
+ /*  */
 .right-container{
     overflow-y: scroll;
     display: inline-block;
