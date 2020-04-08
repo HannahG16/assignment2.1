@@ -322,22 +322,26 @@ and making the text centrally alligned. The width was set to 100% and the backgr
 }
 
 /* portfolio.html */
-
+/* styles the portfolio class to allign everything centrally */
 .portfolio {
-    text-align: center;
-    
+    text-align: center; 
 }
 
+/* styles the h2 tag inside the portfolio class to have a font size of 35px */
 .portfolio h2 {
     font-size: 35px;
 }
 
+/* when the h2 tag is hovered over the scale is transformed to 1.1 at a speed of 1 second making the text appear to grow, the colour is also set
+to pink */
 .portfolio h2:hover {
     transform: scale(1.1);
     transition: 1s;
     color: rgba(247, 8, 175, 0.849);
 }
 
+/* styles both the h2 and h3 element within the portfolio class by setting the font family to squada one, the font weight to normal and
+the text alligned to the left. 4 rem of padding is added to the left */
 .portfolio h2,.portfolio h3 {
     font-family: 'Squada One', cursive;
     font-weight: normal;
@@ -345,12 +349,15 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     padding-left: 4rem;
 }
 
+/* the buttons class holds the filter buttons for the portfolio grid, padding is added to the bottom of 20px and the text aligned centerally */
 .buttons {
     padding-bottom: 20px;
     text-align: center;
 }
 
-
+/* the portfolio grid class is used to hold the grid of portfolio items this is done by setting the display to grid and setting the grid columns to 
+repeat 4 times with 1 fr, a grid gap of 20px is added and the rows are set to auto and minmax to 300px, padding is added to the right and left 
+of 20% and the contents alligned to the center. padding as added to the bottom of the grid by 40px */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -362,25 +369,33 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     padding-bottom: 40px;
 }
 
+/* styles the HTML portfolio item class to have a slight background colour and the height to 120 pixels */
 .portfolio-itemHTML {
     background-color: rgba(243, 179, 224, 0.849);
     height: 120px;
 }
 
+/* styles the CSS portfolio item class to have a slight background colour and the height to 120 pixels */
 .portfolio-itemCSS {
     background-color: rgba(189, 179, 243, 0.849);
     height: 120px;
 }
 
+/* styles the JS portfolio item class to have a slight background colour and the height to 120 pixels */
 .portfolio-itemJS {
     background-color: rgba(243, 208, 179, 0.849);
     height: 120px;
 }
 
+/* styles the portfolio item class to set the position to relative so when one is hidden they move up rather than leaving
+a space */
 .portfolio-item {
     position: relative;
 }
 
+/* styles the image div class by setting its position to absolute and the top to 0, the height and width are then both set to equal 100%
+of their parent, the background image of a laptop is placed as a place holder image for the portfolio item. This is set to cover the div and 
+be centeral and not to repeat the image */
 .imageDiv {
     position: absolute; 
     top: 0; 
@@ -392,12 +407,17 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     background-repeat: no-repeat;
 }
 
+/* the assignment1 id is used to style the individual grid item, the overflow is hidden and the background image set 
+as what the project is representing. This is then set to cover the background */
 #assignment1 {
     overflow: hidden;
     background-size: cover;
     background-image: url("images/assignment1.PNG");
 }
 
+/* styles the image div2 class by setting its position to absolute and the top to 0, the height and width are then both set to equal 100%
+of their parent, the background image is placed as a place holder image for the portfolio item. This is set to cover the div and 
+be centeral and not to repeat the image */
 .imageDiv2 {
     position: absolute; 
     top: 0; 
@@ -409,18 +429,25 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     background-repeat: no-repeat;
 }
 
+/* the todo id is used to style the individual grid item, the overflow is hidden and the background image set 
+as what the project is representing. This is then set to cover the background */
 #todo {
     overflow: hidden;
     background-size: cover;
     background-image: url("images/Capture.PNG");
 }
 
+/* the profile page id is used to style the individual grid item, the overflow is hidden and the background image set 
+as what the project is representing. This is then set to cover the background */
 #profilePage {
     overflow: hidden;
     background-size: cover;
     background-image: url("images/profilePage.PNG");
 }
 
+/* styles the image div3 class by setting its position to absolute and the top to 0, the height and width are then both set to equal 100%
+of their parent, the background image is placed as a place holder image for the portfolio item. This is set to cover the div and 
+be centeral and not to repeat the image */
 .imageDiv3 {
     position: absolute; 
     top: 0; 
@@ -432,6 +459,9 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     background-repeat: no-repeat;
 }
 
+/* styles the middle class which holds the title of the portfolio item by setting the font family to squada one, the colour to white and the position to 
+abosulte at a transition of 0.5 seconds. padding is added to the left and the opacity is set to 0, this will be used to create the effect of the text appearing 
+when the item is hovered over */
 .middle {
     font-family: 'Squada One',cursive;
     opacity: 0;
@@ -441,6 +471,8 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     padding-left: 15px;
 }
 
+/* when the a tag is hovered over within the portfolio item class the middle will set opacity to 1 and the colour to white, the font sizee will be 16px
+at a transition of 0.5 seconds */
 .portfolio-item a:hover .middle{
     font-size: 16px;
     transition: 0.5s;
@@ -448,6 +480,7 @@ and making the text centrally alligned. The width was set to 100% and the backgr
     color: white;
 }
 
+/* styles the a tag within the portfolio item class to set the text decoration to none */
 .portfolio-item a {
     text-decoration: none;
 }
@@ -686,6 +719,7 @@ to normal */
     font-weight: normal;
 }
 
+/* styles the sucessful class inside of the contact container by aligning the text to the center */
 .contactContainer .sucessful {
     text-align: center;
 }
@@ -735,6 +769,8 @@ button:hover {
     transition: 0.3s;
 }
 
+/* styles the sucessful id by styling the width to be 100% of the parent element and the height to be 50px. the dont family is set to 
+squada one and the font weight set to normal */
 #sucessful {
     width: 100%;
     height: 50px;
@@ -743,11 +779,13 @@ button:hover {
 
 }
 
+/* styles the h2 element within the sucessful class by setting the font family to squada one and setting the font weight to normal  */
 .sucessful h2 {
     font-family: 'Squada One',cursive;
     font-weight: normal;
 }
 
+/* media queries */
 
 @media only screen and (max-width: 639px) {
     /* changes the grid column to only 1 rather than 2 */
