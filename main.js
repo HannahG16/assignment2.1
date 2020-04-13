@@ -43,8 +43,8 @@ if (document.getElementById('progress1') && document.getElementById('progress2')
         circle.strokeStyle = color;
         circle.textAlign = 'center';
         
-        circle.fillText(al + '%', cw*.5, ch*.45+2, cw);
-          circle.fillText(text, cw*.5, ch*.55+2, cw);
+        circle.fillText(al + '%', cw*0.5, ch*0.45+2, cw);
+          circle.fillText(text, cw*0.5, ch*0.55+2, cw);
         circle.beginPath();
         circle.arc(50, 50, 40, start, diff/10+start, false);
         circle.stroke();
@@ -90,7 +90,7 @@ by creating a variable called sucessfull, if the user clicks confirm in the mess
 else set the string stored within sucessful be set to not sent. The element within the html document with the id sucessful is then set to equal the variable which will show the 
 message when required. */
 function confirmation (){
-  let sucessful
+  let sucessful;
   if (confirm("Are you sure your ready to send!?") == true) {
     sucessful = "Successfully Sent!";
   } else {
@@ -114,7 +114,7 @@ function confirmation (){
   'I didn’t fail the test. I just found 100 ways to do it wrong. –Benjamin Franklin',
   'Everything has beauty, but not everyone can see. –Confucius',
   'If you\'re offered a seat on a rocket ship, don\'t ask what seat! Just get on. –Sheryl Sandberg'
-]
+];
 
 /* this function, called quote, generates a random quote to be shown when the click me button is clicked using the quotes variable created above. This is done by creating a variable 
 called randomNumber, this is then set to hold a random number up to the length of the quotes array as each one has its own index, the Math.floor method then makes this round down to the nearest whole number.

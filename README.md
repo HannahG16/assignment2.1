@@ -47,3 +47,13 @@ I found another online validator to check my CSS code, no errors were shown only
 ![CSS validation Up to date](images/cssvalidation2.png)
 
 **JavaScript**
+
+When I put JavaScript file through an online validator the following errors were shown;
+
+![JS validation](images/jsvalidation.png)
+
+The easiest error to fix was the missing semicolons, there were two missing from within the file, I went into my code and put them in where they were missing. The second error was that putting .5 numbers rather than 0.5 can cause confusion and could potentially miss lead people into thinking they were dots, this again was easy to solve, and I just put a 0 Infront of the decimal points, this fixed this error. The first error concerns the function which draws the circles to show the skills I hold. I took this function from an existing codepen project and changed it to fit with the style I wanted. The error is concerned with putting the second function within the block of the first one which makes the code more complicated. This should be declared outside the block and used within the other function. Although I understand the JavaScript used within this function I couldn’t work out how to change the function to fix this error without breaking the code. This is something I’m going to investigate further and attempt to fix in the future. I put my code back through the code validator and the only error present was the function error which I expected.  
+
+![JS validation re run](images/redonejs.png)
+
+### Wireframes
