@@ -31,7 +31,7 @@ and 0 padding is used to stop a white space put in by the browser */
 .profile-image img:hover {
     
     border-radius: 0%;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 /* the image inside the .profile-image class is set to have a border radius of 10% */
