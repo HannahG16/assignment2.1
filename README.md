@@ -57,3 +57,33 @@ The easiest error to fix was the missing semicolons, there were two missing from
 ![JS validation re run](images/redonejs.png)
 
 ### Wireframes
+**About Me wireframe**
+
+This wireframe shows the layout for the about me index page, the navigation bar section is present on the left which contains an image of myself as well as all the links to the other pages as well as some links to my professional profiles. this is shown on every page making it look like only the content on the right is changing depending what page the user is on. The information is split into a grid layout making it fun but simple at the same time. Links are shown futher down the page as well as the click on me button which activates a random quote. 
+
+![about me wireframe](images/figma1.PNG)
+
+**Portfolio wireframe**
+
+This the portfolio page wireframe which shows the grid layout of the projects which I have completed. The user can choose what types of examples they wish to see by clicking the filtering buttons along the top of the grid. You can see the titles which will be shown when the image is hovered over as well as the heading of the whole page following the previous style on the home page.
+
+
+![portfolio wireframe](images/figma2.PNG)
+
+**Contact me wireframe**
+
+This wireframe shows the contact page which consists of a contact form. The contact form is simple and minimalistic with only the four main inputs which are required to gain contact with me. The sucessfully sent message is shown when the user selects they do wish to send the form through the pop up message providing validation.
+
+![contact me wireframe](images/figma3.PNG)
+
+**CV wireframe**
+
+This is the wireframe for the cv page showing the three main columns used within the grid layout as well as content and headings which will be shown in each part. The navigation is still present and contains the same information as previous to create a consistent house style throughout.
+
+![cv wireframe](images/figma4.PNG)
+
+**Mobile Portfolio wireframe**
+
+This is an example of the mobile version of the portfolio page, as you can see the navigation bar moves to the top of the page and the icons go into a footer at the bottom of the page, the content style stays the same however the grid changes to only 1 column meaning the user must scroll down to view the grid. 
+
+![mobile portfolio example wireframe](images/figma5.PNG)
