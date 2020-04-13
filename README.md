@@ -44,5 +44,6 @@ When I investigated futher I founf multiple comments like this one shown below w
 
 I found another online validator to check my CSS code, no errors were shown only warnings which could happen. One of these includes the alphabetical order of the properties within their containing elements. This can be sorted by reordering the properties within the classes, so they are in alphabetical order. Another warning was concerning using rgba colours, older browsers might not support using rgba so having a fallback colour using rgb can make sure the colour stays the same in older browsers. Another warning was not to include any values with a 0% border radius as they is the default value, however I have used this to change the image border radius from 10% to 0% when hovered over, I couldn’t find another way to complete this without stating the border radius as 0% so have kept this the same. The last waring received was to only allow transitions under 60fps meaning it is very slow, I have changed this to 0.5s within my code to allow a faster transition speed allowing the user to see it more effectively.  
 
-![CSS validation Up to date](images/CSSvalidation2.png)
+![CSS validation Up to date](images/cssvalidation2.png)
 
+**JavaScript**
