@@ -94,7 +94,7 @@ element */
 
 /* the a tag inside the icons class is set to display no text decoration and set them to the text colour black */
 .icons a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: black;
 }
 
